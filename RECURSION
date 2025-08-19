@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int rec(int n)
+int main(){
+  int n;
+  printf("enter a number");
+  scanf("%d", &n);
+  recn(n);
+  printf("the numbers are: %d\n", rec(n));
+  return 0;
+}
+int rec(int n){
+    if(n==1){
+    return 1;
+    }
+    if(n%2==0){
+    return rec(n/2);
+    }
+    else{
+    return((n*3)+1);
+  }
+}
